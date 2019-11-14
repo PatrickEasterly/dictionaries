@@ -48,13 +48,26 @@ ramit = {
     }
   ]
 }
-#get the email addres of Ramit
-print(ramit['email'])
 
-my_dictionary = {
-  'yeet': 'fam',
-  'for' : 'sure',
-  'let' : {
-    'js' : 'var'
-  }
-}
+#get the email addres of Ramit
+# print(ramit['email'])
+
+#get the first of Ramit's interests
+# intr = ramit['interests'][0]
+# print(intr)
+
+# get the email address of jasmine
+# print(ramit['friends'][0]['email'])
+
+# get the second of Jan's intersts
+# print(ramit['friends'][1]['interests'][1])
+
+
+# letter summary
+# write a letter histogram program that gets input and prints a dictionary with the tally of how many 
+# times each letter in the alphabet was used in the word
+
+user_input = input('Please enter a word: ')
+alphabet = list('abcdefghijklmnopqrstuvwxyz')
+def letter_histogram(word):
+  
