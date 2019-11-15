@@ -76,10 +76,10 @@ places = {
 # print(places.get('Mars'))
 ga_cities = places['Earth']['US']['Georgia']
 
-for city in ga_cities:
-    print(ga_cities[city])   # prints the keys and the values
-for city in ga_cities:
-    print(city)              # prints the keys
+# for city in ga_cities:
+#     print(ga_cities[city])   # prints the keys and the values
+# for city in ga_cities:
+#     print(city)              # prints the keys
 
 
 
@@ -146,10 +146,22 @@ charges = [
 # print(f'Highest charge: ${highest}')
 # print(f'Highest paid vendor: {high_vendor}')
 
-# How do I loop through information in a dictionary? 
 
 ##### How do I modify a dictionary? 
 
 # how to I store new values to a dictionary?
+favorites = {}
+favorites['cat'] = 'Melvin'
+print(favorites['cat'])        #Melvin
+
+# how do I update a value in an existing dictionary?
+favorites['cat'] = 'Pablo'
+favorites.update(cat='Sage')
+
+print(favorites['cat'])        #sage
 
 # how do I remove values from a dictionary? 
+del favorites['cat']
+# or 
+favorites['cat'] = ''
+print(favorites)
